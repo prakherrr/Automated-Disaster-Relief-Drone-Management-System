@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Relief Drone Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.min.js"></script> <!-- Include Socket.io -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Drone Management Dashboard</h1>
+        </header>
+        
+        <div class="status-board">
+            <h2>Live Drone Status</h2>
+            <table id="drone-table">
+                <thead>
+                    <tr>
+                        <th>Drone ID</th>
+                        <th>Status</th>
+                        <th>Location</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Drone Data will be populated here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="missions">
+            <h2>Drone Missions</h2>
+            <div id="missions-list">
+                <!-- Mission status will be updated here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
